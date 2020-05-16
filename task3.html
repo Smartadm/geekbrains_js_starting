@@ -1,9 +1,30 @@
-/*
-Вывести в консоль значения выражений и объяснить почему получились такие значения
-используя комментарии к каждому выражению:
-10 + 10 + "10"
-10 + "10" + 10
-10 + 10 + +"10"
-10 / -""
-10 / +"2,5"
-*/
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        'use strict';
+        let result1 = 10 + 10 + "10";
+            // first summ 10 + 10, then concotination 10 with '10'. result 2010.
+        let result2 = 10 + "10" + 10;
+            // concotination 10 with '10', then concotination '1010' with 10. result 101010.
+        let result3 = 10 + 10 + +"10";
+            // first unary + makes '10' into 10, then summ 10+10+10. result 30.
+        let result4 = 10 / -"";
+            // unary - makes '' into zero. Division by 0 makes Infinity. result Infinity.
+        let result5 = 10 / +"2,5";
+            // unary + makes NaN because ',' between 2 and 5. Division by Nan makes Nan. result NaN.
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+<!--Вывести в консоль значения выражений и объяснить почему получились такие значения-->
+<!--используя комментарии к каждому выражению:-->
+<!--10 + 10 + "10"-->
+<!--10 + "10" + 10-->
+<!--10 + 10 + +"10"-->
+<!--10 / -""-->
+<!--10 / +"2,5"-->
