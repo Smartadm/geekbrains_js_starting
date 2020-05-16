@@ -6,15 +6,15 @@
     <script>
         'use strict';
         let result1 = 10 + 10 + "10";
-            // first summ 10 + 10, then concotination 10 with '10'. result 2010.
+            // сначала суммируем 10+10, потом конкотинация со строкой '10' Результат 2010.
         let result2 = 10 + "10" + 10;
-            // concotination 10 with '10', then concotination '1010' with 10. result 101010.
+            // Конкотинация 10 со строкой '10', потом конкотинация строки '1010' с 10. Результат 101010.
         let result3 = 10 + 10 + +"10";
-            // first unary + makes '10' into 10, then summ 10+10+10. result 30.
+            // Унарный плюс делает строку '10' числом? далее сумма 10+10+10. Результат 30.
         let result4 = 10 / -"";
-            // unary - makes '' into zero. Division by 0 makes Infinity. result Infinity.
+            // Унарный минус делает строку '' числом? т/к/ она пустая? получается ноль. Деление на ноль дает Infinity.
         let result5 = 10 / +"2,5";
-            // unary + makes NaN because ',' between 2 and 5. Division by Nan makes Nan. result NaN.
+            //Унарный плюс делает строку числом, из-за запятой получается NaN, при делении тоже получаем NaN.
     </script>
 </head>
 <body>
